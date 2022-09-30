@@ -1,10 +1,13 @@
 import React from 'react'
-import MainNavigation from '../Navigations/MainNavigation'
+import Cluster from "../pages/Cluster"
 
 const Home = () => {
     return (
         <div>
-            <MainNavigation />
+            <div>
+                <h3>Home</h3>
+            </div>
+            <Cluster />
         </div>
     )
 }

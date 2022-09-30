@@ -3,6 +3,7 @@ import Home from "./Router/Home";
 import Input from "./reusableComponents/Input";
 import Button from "./reusableComponents/Button";
 import SideNav from "./Navigations/SideNav";
+import Environment from "./Router/Environment";
 
 //image import
 import Logo from "../asset/images/Logo.svg";
@@ -12,12 +13,15 @@ import Notification from "../asset/images/Notification.svg";
 import { BsQuestionCircle } from "react-icons/bs"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { GoSearch } from "react-icons/go"
+import { GrFormClose } from "react-icons/gr"
+import { IoIosSettings } from "react-icons/io"
+import { MdOutlineFeedback } from "react-icons/md"
 
 // styles import
 import { Flex, NavBar, StyledForm, StyledClickedForm, StyledUl } from "../asset/styles/Reusable.styled";
 import { StyledContainer } from "../asset/styles/Container.styled";
 import GlobalStyles from "../asset/styles/Global";
-import { SideNavContainer } from "../asset/styles/StyledSideNav"
+import { SideNavContainer, StyledDiv, LineRule, Padding } from "../asset/styles/StyledSideNav"
 
 
 export {
@@ -25,6 +29,7 @@ export {
     Input,
     Button,
     SideNav,
+    Environment,
 
     Logo,
     Notification,
@@ -32,6 +37,9 @@ export {
     GiHamburgerMenu,
     BsQuestionCircle,
     GoSearch,
+    GrFormClose,
+    IoIosSettings,
+    MdOutlineFeedback,
 
     StyledContainer,
     Flex,
@@ -40,6 +48,9 @@ export {
     StyledForm,
     StyledClickedForm,
     StyledUl,
-    SideNavContainer
+    SideNavContainer,
+    StyledDiv,
+    LineRule,
+    Padding,
 
 }

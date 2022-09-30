@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
         border: 1px solid ${({ theme }) => theme.colors.navigationMenu};
         border-radius: 4px;
         opacity:0.8;
-        margin-right: 40px;
+        margin-right: 20px;
         &:hover{
             opacity:0.64;
             cursor: pointer;
@@ -31,12 +31,13 @@ const GlobalStyles = createGlobalStyle`
     }
     li {
         list-style: none;
+    }
+    .nav_link {
+        padding: 0.75em ;
         &:hover {
         background-color: #141430;
-        /* padding: 0.75em 0  1em 0 */
     }
-    }
-
+  }
     input {
     border: none;
     outline: none;
@@ -48,12 +49,13 @@ const GlobalStyles = createGlobalStyle`
   }
   .menuImage {  
     color: ${({ theme }) => theme.colors.navigationMenu};
-    /* width:30px;
-    height: 30px; */
+    margin-top: 5px;
     &:hover {
         opacity: 0.64;
     }
-   
+  }
+  .menuImage.active {
+    color: white;
   }
 `;
 

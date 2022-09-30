@@ -10,14 +10,24 @@ import {
     Input,
     Button,
     StyledUl,
-    SideNav
+    SideNav,
 } from "../index";
 
 const MainNavigation = () => {
+    const [activeColor, setActiveColor] = useState(false);
     const [openSideNav, setOpenSideNav] = useState(false);
     const handleClick = () => {
+        activeMenu();
         setOpenSideNav(!openSideNav);
     };
+    const activeMenu = () => {
+        setActiveColor((current) => !current);
+    };
+    const closeSideNav = () => {
+        setActiveColor(false)
+        setOpenSideNav(false)
+
+    }
     return (
         <StyledContainer>
             <NavBar>
@@ -25,27 +35,47 @@ const MainNavigation = () => {
                     <img
                         src={Logo}
                         alt='logo'
-                        style={{ width: "12%", paddingLeft: "8px" }}
+                        style={{ width: "15%", padding: "0.75em" }}
                     />
                     <Flex>
-                        <Input />
-                        <Button text='Learn' className="learnBtn" />
+                        <Flex style={{ padding: "0.75em" }}>
+                            <Input />
+                            <Button text='Learn' className='learnBtn' />
+                        </Flex>
                         <StyledUl>
-                            <li>
-                                <img src={Notification} alt='Notification' />
+                            <li className="nav_link">
+                                <img
+                                    src={Notification}
+                                    alt='Notification'
+                                    className='menuImage'
+                                />
                             </li>
-                            <li>
-                                <BsQuestionCircle className="menuImage" size="1.5em" />
+                            <li className="nav_link">
+                                <BsQuestionCircle className='menuImage' size='1.5em' />
                             </li>
-                            <li>
-                                <GiHamburgerMenu className="menuImage" size="1.5em" onClick={handleClick} />
+                            <li
+                                style={{
+                                    backgroundColor: activeColor ? "#45C6E8" : "",
+                                }}
+                                className="nav_link"
+                            >
+                                <GiHamburgerMenu
+                                    className='menuImage'
+                                    size='1.5em'
+                                    onClick={handleClick}
+                                    style={{
+                                        color: activeColor ? "#fff" : "",
+                                    }}
+                                />
                             </li>
                         </StyledUl>
                     </Flex>
                 </Flex>
             </NavBar>
-            <SideNav openSideNav={openSideNav}
-                onClose={() => setOpenSideNav(false)} />
+            <SideNav
+                openSideNav={openSideNav}
+                onClose={closeSideNav}
+            />
         </StyledContainer>
     );
 };

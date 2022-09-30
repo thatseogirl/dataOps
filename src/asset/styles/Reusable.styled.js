@@ -7,9 +7,8 @@ export const Flex = styled.div`
 export const StyledUl = styled.ul`
   display: flex;
   justify-content: space-between;
-  gap: 2.5em;
+  gap: 1em;
   cursor: pointer;
-  padding-top: 0.25em;
 `;
 
 export const NavBar = styled.nav`
@@ -18,7 +17,6 @@ export const NavBar = styled.nav`
   top: 0px;
   left: 0px;
   right: 0px;
-  padding: 0.75em;
 `;
 export const StyledForm = styled.form`
   display: flex;

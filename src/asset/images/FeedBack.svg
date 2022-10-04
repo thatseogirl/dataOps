@@ -1,0 +1,14 @@
+ <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='16'
+                height='16'
+                viewBox='0 0 16 16'
+                fill='black'
+                class='Icon__StyledIcon-sc-7gic4q-0 CloudGlobalDropdown__StyledIcon-sc-2tn9nq-0 lcgKSh cTVzDl'
+                data-testid='chat-icon'
+            >
+                <path
+                    fill-rule='evenodd'
+                    d='M11.853 2c1.094 0 1.985.89 1.985 1.984v5.01a1.987 1.987 0 0 1-1.985 1.984h-3.7L3.827 14v-3.028A1.987 1.987 0 0 1 2 8.994v-5.01C2 2.89 2.89 2 3.984 2h7.869zm0 1.488H3.984a.498.498 0 0 0-.496.496v5.01c0 .273.224.496.496.496h1.331v1.655L7.684 9.49h4.169a.497.497 0 0 0 .496-.496v-5.01a.497.497 0 0 0-.496-.496zM5.818 5.715v1.488H4.486V5.715h1.332zm2.771 0v1.488H7.257V5.715h1.332zm2.769 0v1.488h-1.331V5.715h1.331z'
+                ></path>
+            </svg>

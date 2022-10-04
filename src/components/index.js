@@ -8,6 +8,8 @@ import Environment from "./Router/Environment";
 //image import
 import Logo from "../asset/images/Logo.svg";
 import Notification from "../asset/images/Notification.svg";
+import Contact from "../asset/images/Contact.svg";
+import FeedBack from "../asset/images/FeedBack.svg";
 
 //react-icons import
 import { BsQuestionCircle } from "react-icons/bs"
@@ -21,7 +23,7 @@ import { MdOutlineFeedback } from "react-icons/md"
 import { Flex, NavBar, StyledForm, StyledClickedForm, StyledUl } from "../asset/styles/Reusable.styled";
 import { StyledContainer } from "../asset/styles/Container.styled";
 import GlobalStyles from "../asset/styles/Global";
-import { SideNavContainer, StyledDiv, LineRule, Padding } from "../asset/styles/StyledSideNav"
+import { SideNavContainer, StyledDiv, Section } from "../asset/styles/StyledSideNav"
 
 
 export {
@@ -33,6 +35,8 @@ export {
 
     Logo,
     Notification,
+    Contact,
+    FeedBack,
 
     GiHamburgerMenu,
     BsQuestionCircle,
@@ -50,7 +54,6 @@ export {
     StyledUl,
     SideNavContainer,
     StyledDiv,
-    LineRule,
-    Padding,
+    Section
 
 }

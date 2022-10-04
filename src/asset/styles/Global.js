@@ -57,6 +57,35 @@ const GlobalStyles = createGlobalStyle`
   .menuImage.active {
     color: white;
   }
+ .admin_line_rule {
+    height: 4px;
+  width: 80%;
+  margin: auto;
+    background-color: ${({ theme }) => theme.colors.navigationMenu};
+    opacity: 0.54;
+    margin-top: 0.75em;
+  }
+  .line_rule {
+    border:0.5px solid ${({ theme }) => theme.colors.navigationMenu};
+    opacity: 0.54;
+  }
+  .contact_feedback {
+    color: ${({ theme }) => theme.colors.admin};
+    width: 80%;
+  margin: auto;
+    padding: 0.5em 1.2em;
+    letter-spacing: 0.25px;
+    &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.signOut};
+    border-radius: 2px;
+    border: 1px solid ;
+    outline: none;
+  }
+  }
+  .active {
+    background-color: ${({ theme }) => theme.colors.navigationMenu};
+  }
 `;
 
 export default GlobalStyles;

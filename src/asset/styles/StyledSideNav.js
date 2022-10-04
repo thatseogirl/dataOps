@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const SideNavContainer = styled.div`
-  background:${({ theme }) => theme.colors.bgColor_sideNav};
+  background: ${({ theme }) => theme.colors.bgColor_sideNav};
   position: fixed;
   width: 18%;
-  height: 100vh;
+  height: 100%;
   right: 0px;
   top: 56px;
   bottom: 0px;
   margin: 0;
-  padding: 21px 24px 24px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   animation: moveSide 4s ease-in-out;
   transform-box: fill-box;
@@ -27,15 +26,21 @@ export const SideNavContainer = styled.div`
 `;
 
 export const StyledDiv = styled.div`
-    padding-top: 2em;
+  padding-top: 0.5em;
 `;
-
-export const LineRule = styled.hr`
-    width: 400px;
-    background-color: red;
-    padding: 0; 
+export const StyledLi = styled.li`
+width: 80%;
+margin: auto;
+    color:${({ theme }) => theme.colors.admin};
+    padding: 0.5em 1.2em;
+    letter-spacing: 0.25px;
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.signOut};
+    border-radius: 2px;
+    border: 1px solid ;
+  }
 `;
-
-export const Padding = styled.div`
-padding: 2.5em;
+export const Section = styled.section`
+padding: 0.75em 2.5em;
 `;

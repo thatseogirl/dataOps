@@ -11,6 +11,9 @@ const theme = {
     navigationMenu: "#45C6E8",
     footer: "",
     inputText: "#91a9bb",
+    userName: "#BEC4CF",
+    signOut: "F9F9F9",
+    admin: "#8A8A8F",
   },
   responsiveness: {
     ipad: "768px",

@@ -59,8 +59,8 @@ const GlobalStyles = createGlobalStyle`
   }
  .admin_line_rule {
     height: 4px;
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
     background-color: ${({ theme }) => theme.colors.navigationMenu};
     opacity: 0.54;
     margin-top: 0.75em;
@@ -72,19 +72,78 @@ const GlobalStyles = createGlobalStyle`
   .contact_feedback {
     color: ${({ theme }) => theme.colors.admin};
     width: 80%;
-  margin: auto;
+    margin: auto;
     padding: 0.5em 1.2em;
     letter-spacing: 0.25px;
     &:hover {
     cursor: pointer;
-    background-color: ${({ theme }) => theme.colors.signOut};
+    background-color: ${({ theme }) => theme.colors.secondaryColor};
     border-radius: 2px;
     border: 1px solid ;
     outline: none;
   }
   }
-  .active {
-    background-color: ${({ theme }) => theme.colors.navigationMenu};
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    h3 {
+      font-size: 32px;
+      color: ${({ theme }) => theme.colors.darkDim};
+    }
+    p {
+      font-size: 14px;
+      color:  ${({ theme }) => theme.colors.darkDim};
+      margin-bottom: 38px;
+    }
+    section {
+      display: flex;
+    }
+    .circle {
+      width: 8px;
+      height: 8px;
+      border: 2px solid #E0E0E7;
+      border-radius: 50%;
+      margin: 6px 14px;
+    }
+  }
+  .span {
+    color: ${({ theme }) => theme.colors.darkDim};
+    font-weight: 300;
+    letter-spacing: 0px;
+  }
+  .basic {
+    color: white;
+    background-color:#00AFBA;
+    border: 0;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 1em;
+
+  }
+  .standard {
+    color: #006B96;
+    background-color:transparent;
+    border: 1px solid #006B96;
+  }
+  .dedicated {
+    color: #A8A9B8;
+    background-color:transparent;
+    border: 1px solid #A8A9B8;
+  }
+  .hat_img {
+    position: absolute;
+    width: 3%;
+    right: 0;
+    top: 300px;
+    bottom: 0;
+    cursor: pointer;
   }
 `;
 

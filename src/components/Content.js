@@ -8,6 +8,8 @@ const userDetails = [
 const cluster = [
     {
         id: "1",
+        type: "Basic",
+        provide: "",
     }
 ]
 

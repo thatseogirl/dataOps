@@ -1,0 +1,37 @@
+  <svg
+                    width='16'
+                    height='16'
+                    viewBox='0 0 17 16'
+                    fill='#FF19E6'
+                    xmlns='http://www.w3.org/2000/svg'
+                    class='Icon__StyledIcon-sc-7gic4q-0 kPYUxA'
+                    data-testid='tutorial-icon'
+                >
+                    <path
+                        d='M8.73075 2L2.5 4.67006L8.73075 8.23013L14.9615 4.67006L8.73075 2Z'
+                        stroke='#141430'
+                        stroke-width='1.5'
+                    ></path>
+                    <line
+                        x1='15.2665'
+                        y1='4.67006'
+                        x2='15.2665'
+                        y2='8.23013'
+                        stroke='#141430'
+                        stroke-width='1.5'
+                    ></line>
+                    <rect
+                        x='0.6294'
+                        width='0.890063'
+                        height='0.890063'
+                        transform='matrix(0.707142 -0.707072 0.707142 0.707072 14.1666 9.12018)'
+                        fill='#142B52'
+                        stroke='#141430'
+                        stroke-width='0.890063'
+                    ></rect>
+                    <path
+                        d='M4.72522 6.00508V10.2265C6.06038 12.1027 10.5999 13.6037 12.7362 10.2265V6.00508'
+                        stroke='#141430'
+                        stroke-width='1.5'
+                    ></path>
+                </svg>

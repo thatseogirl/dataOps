@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import {
     Logo,
     Notification,
@@ -32,11 +33,14 @@ const MainNavigation = () => {
         <StyledContainer>
             <NavBar>
                 <Flex>
-                    <img
-                        src={Logo}
-                        alt='logo'
-                        style={{ width: "15%", padding: "0.75em" }}
-                    />
+                    <NavLink to="/" style={{ padding: "0.75em" }}>
+                        <img
+                            src={Logo}
+                            alt='logo'
+                            style={{ width: "65%" }}
+                        />
+                    </NavLink>
+
                     <Flex>
                         <Flex style={{ padding: "0.75em" }}>
                             <Input />

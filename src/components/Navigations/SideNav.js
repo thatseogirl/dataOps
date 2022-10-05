@@ -78,22 +78,22 @@ const SideNav = ({ openSideNav, onClose }) => {
                     <Flex
                         style={{ gap: "0.25em", flexDirection: "column", marginTop: "1em" }}
                     >
-                        <li className='contact_feedback'>
+                        <StyledLi>
                             Contact us
                             <img
                                 src={Contact}
                                 alt='Contact'
                                 style={{ marginLeft: "0.5em" }}
                             />
-                        </li>
-                        <li className='contact_feedback'>
+                        </StyledLi>
+                        <StyledLi>
                             Send FeedBack
                             <img
                                 src={FeedBack}
                                 alt='FeedBack'
                                 style={{ marginLeft: "0.5em" }}
                             />
-                        </li>
+                        </StyledLi>
                     </Flex>
                 </StyledDiv>
             </Flex>

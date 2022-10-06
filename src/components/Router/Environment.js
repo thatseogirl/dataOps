@@ -2,7 +2,7 @@ import { Flex, DefaultCluster, Button, BasicCluster } from "../index";
 
 const Environment = () => {
     return (
-        <Flex>
+        <Flex style={{ flexDirection: "column" }}>
             <div>
                 <BasicCluster />
             </div>
@@ -12,10 +12,10 @@ const Environment = () => {
                     Start generating data and developing your first pipeline with one of
                     the suggested methods
                 </p>
-                <Flex>
+                <div style={{ display: "flex" }}>
                     <Button text='Add a connector' />
                     <Button text='Configure a client' />
-                </Flex>
+                </div>
             </div>
             <DefaultCluster />
         </Flex>

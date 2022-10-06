@@ -11,5 +11,10 @@ export const Container = styled.div`
     padding: 7.5em;
     @media (max-width: ${({ theme }) => theme.responsiveness.desktop}) {
     width: 100%;
+    padding: 4em;
+    }
+    @media (max-width: ${({ theme }) => theme.responsiveness.ipad}) {
+    width: 100%;
+    padding: 4em;
     }
 `;

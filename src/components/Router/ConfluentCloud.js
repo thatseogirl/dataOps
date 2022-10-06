@@ -1,12 +1,12 @@
-import { DefaultCluster, DohCluster, BasicCluster } from "../index";
+import { DefaultCluster, DohCluster, BasicCluster, Flex } from "../index";
 
 const ConfluentCloud = () => {
     return (
         <div>
-            <div>
+            <Flex style={{ flexDirection: "column", gap: "15em" }}>
                 <BasicCluster />
                 <DefaultCluster />
-            </div>
+            </Flex>
             <DohCluster />
         </div>
     );

@@ -26,12 +26,12 @@ import Hat from "../asset/images/Hat.svg";
 
 //react-icons import
 import { BsQuestionCircle, BsCircle } from "react-icons/bs";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GiHamburgerMenu, GiDiceSixFacesFour } from "react-icons/gi";
 import { GoSearch } from "react-icons/go";
 import { GrFormClose } from "react-icons/gr";
 import { IoIosSettings, IoIosArrowForward } from "react-icons/io";
 import { MdOutlineFeedback } from "react-icons/md";
-import { HiOutlineMinus, HiOutlineArrowNarrowLeft } from "react-icons/hi";
+import { HiOutlineMinus, HiOutlineArrowNarrowLeft, HiOutlineDotsHorizontal } from "react-icons/hi";
 
 // styles import
 import {
@@ -52,6 +52,7 @@ import {
 } from "../asset/styles/StyledSideNav";
 import { Tbody, Tr } from "../asset/styles/Table.styled";
 import { Modal } from "../asset/styles/Modal.styled";
+import { StyledBasicCluster, StyledDefaultWrapper, StyledDoh } from "../asset/styles/ConfluentCloud.styled";
 
 export {
     Home,
@@ -68,6 +69,7 @@ export {
     Basic,
     Standard,
     Dedicated,
+
     Logo,
     Notification,
     Contact,
@@ -76,6 +78,8 @@ export {
     StandardLogo,
     BasicLogo,
     Hat,
+
+    GiDiceSixFacesFour,
     GiHamburgerMenu,
     BsQuestionCircle,
     BsCircle,
@@ -86,6 +90,8 @@ export {
     IoIosArrowForward,
     HiOutlineMinus,
     HiOutlineArrowNarrowLeft,
+    HiOutlineDotsHorizontal,
+
     StyledContainer,
     Container,
     Flex,
@@ -102,4 +108,7 @@ export {
     Tbody,
     Tr,
     Modal,
+    StyledBasicCluster,
+    StyledDefaultWrapper,
+    StyledDoh
 };

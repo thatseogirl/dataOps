@@ -87,6 +87,7 @@ const GlobalStyles = createGlobalStyle`
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    padding-top: 1em;
 
     h3 {
       font-size: 32px;

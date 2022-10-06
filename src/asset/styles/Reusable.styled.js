@@ -51,6 +51,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.75em;
+  @media (max-width: ${({ theme }) => theme.responsiveness.desktop}) {
+    width: 100%;
+    /* padding: 4em; */
+    }
 `;
 export const StyledLogoHeader = styled.div`
   display: flex;

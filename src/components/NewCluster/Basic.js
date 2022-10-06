@@ -43,7 +43,7 @@ const Basic = () => {
             <div>
                 <table>
                     <Tbody>
-                        <Tr style={{ gap: breakPoint ? '2em' : '5.5em' }}>
+                        <Tr style={{ gap: '5.5em' }}>
                             <td style={{ fontSize: "15px" }}>Ingress</td>
                             <td
                                 data-testid='ingress-BASIC'

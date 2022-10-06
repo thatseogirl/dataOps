@@ -10,8 +10,10 @@ import {
     Container,
     Contact,
 } from "../index";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Cluster = () => {
+    const breakPoint = useMediaQuery("(max-width: 767px)");
     const [openCluster, setOpenCluster] = useState(false);
     const handleClick = () => {
         setOpenCluster(!openCluster);
@@ -26,15 +28,27 @@ const Cluster = () => {
                     <h3>Create cluster</h3>
                     <section>
                         <p>1. Select cluster type </p>
-                        <div className='circle'></div>
-                        <div className='circle'></div>
-                        <div className='circle'></div>
-                        <div className='circle'></div>
-                        <div className='circle'></div>
+                        {breakPoint ? (
+                            ""
+                        ) : (
+                            <>
+                                {" "}
+                                <div className='circle'></div>
+                                <div className='circle'></div>
+                                <div className='circle'></div>
+                                <div className='circle'></div>
+                                <div className='circle'></div>
+                            </>
+                        )}
                     </section>
                 </header>
                 <Flex
-                    style={{ justifyContent: "center", gap: "1em", marginBottom: "48px" }}
+                    style={{
+                        justifyContent: "center",
+                        gap: "1em",
+                        marginBottom: "48px",
+                        flexDirection: breakPoint ? "column" : "",
+                    }}
                 >
                     <Basic />
                     <Standard />

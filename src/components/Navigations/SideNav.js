@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { userDetails } from "../Content";
@@ -15,13 +16,13 @@ import { StyledLi } from "../../asset/styles/StyledSideNav";
 
 const SideNav = ({ openSideNav, onClose }) => {
     const [user, setUser] = useState(userDetails);
-
     const location = useLocation();
     const { pathname } = location;
     const splitLocation = pathname.split("/");
     if (!openSideNav) {
         return null;
     }
+
     return (
         <SideNavContainer>
             <Flex style={{ flexDirection: "column", gap: "1em" }}>
@@ -58,7 +59,11 @@ const SideNav = ({ openSideNav, onClose }) => {
                             marginTop: "1.25em",
                         }}
                     >
-                        <StyledLi className={splitLocation[1] === "" ? "active" : ""}>
+                        <StyledLi
+                            style={{
+                                background: splitLocation[1] === "environment" ? "#45C6E8" : "",
+                            }}
+                        >
                             <NavLink
                                 to='/environment'
                                 style={{ textDecoration: "none", color: "#8A8A8F" }}

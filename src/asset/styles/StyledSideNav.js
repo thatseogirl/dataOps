@@ -31,22 +31,16 @@ export const StyledDiv = styled.div`
 export const StyledLi = styled.li`
   width: 80%;
   margin: auto;
-    color:${({ theme }) => theme.colors.admin};
-    padding: 0.5em 1.2em;
-    letter-spacing: 0.25px;
+  color: ${({ theme }) => theme.colors.admin};
+  padding: 0.5em 1.2em;
+  letter-spacing: 0.25px;
   &:hover {
     cursor: pointer;
     background-color: ${({ theme }) => theme.colors.secondaryColor};
     border-radius: 2px;
-    border: 1px solid ;
-  }
-  .active {
-    background-color: ${({ theme }) => theme.colors.navigationMenu};
-    cursor: pointer;
-    color: black;
-    border-radius: 2px;
+    border: 1px solid;
   }
 `;
 export const Section = styled.section`
-padding: 0.75em 2.5em;
+  padding: 0.75em 2.5em;
 `;

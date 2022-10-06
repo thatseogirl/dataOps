@@ -23,15 +23,25 @@ import BasicLogo from "../asset/images/BasicLogo.svg";
 import StandardLogo from "../asset/images/StandardLogo.svg";
 import DedicatedLogo from "../asset/images/DedicatedLogo.svg";
 import Hat from "../asset/images/Hat.svg";
+import Tree from "../asset/images/Tree.png";
 
 //react-icons import
 import { BsQuestionCircle, BsCircle } from "react-icons/bs";
+import { AiOutlineWarning } from "react-icons/ai";
 import { GiHamburgerMenu, GiDiceSixFacesFour } from "react-icons/gi";
 import { GoSearch } from "react-icons/go";
 import { GrFormClose } from "react-icons/gr";
-import { IoIosSettings, IoIosArrowForward } from "react-icons/io";
+import {
+    IoIosSettings,
+    IoIosArrowForward,
+    IoIosCheckmarkCircleOutline,
+} from "react-icons/io";
 import { MdOutlineFeedback } from "react-icons/md";
-import { HiOutlineMinus, HiOutlineArrowNarrowLeft, HiOutlineDotsHorizontal } from "react-icons/hi";
+import {
+    HiOutlineMinus,
+    HiOutlineArrowNarrowLeft,
+    HiOutlineDotsHorizontal,
+} from "react-icons/hi";
 
 // styles import
 import {
@@ -52,7 +62,11 @@ import {
 } from "../asset/styles/StyledSideNav";
 import { Tbody, Tr } from "../asset/styles/Table.styled";
 import { Modal } from "../asset/styles/Modal.styled";
-import { StyledBasicCluster, StyledDefaultWrapper, StyledDoh } from "../asset/styles/ConfluentCloud.styled";
+import {
+    StyledBasicCluster,
+    StyledDefaultWrapper,
+    StyledDoh,
+} from "../asset/styles/ConfluentCloud.styled";
 
 export {
     Home,
@@ -69,7 +83,6 @@ export {
     Basic,
     Standard,
     Dedicated,
-
     Logo,
     Notification,
     Contact,
@@ -78,8 +91,9 @@ export {
     StandardLogo,
     BasicLogo,
     Hat,
-
+    Tree,
     GiDiceSixFacesFour,
+    AiOutlineWarning,
     GiHamburgerMenu,
     BsQuestionCircle,
     BsCircle,
@@ -91,7 +105,7 @@ export {
     HiOutlineMinus,
     HiOutlineArrowNarrowLeft,
     HiOutlineDotsHorizontal,
-
+    IoIosCheckmarkCircleOutline,
     StyledContainer,
     Container,
     Flex,
@@ -110,5 +124,5 @@ export {
     Modal,
     StyledBasicCluster,
     StyledDefaultWrapper,
-    StyledDoh
+    StyledDoh,
 };

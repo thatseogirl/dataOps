@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Home,
@@ -7,6 +8,8 @@ import {
   MainNavigation,
 } from "./components";
 import { ThemeProvider } from "styled-components";
+import { useEffect, useState } from "react";
+import { axiosClient } from "./axiosRequest/ApiClient";
 
 const theme = {
   colors: {
@@ -28,6 +31,21 @@ const theme = {
   },
 };
 function App() {
+  const [getData, setGetData] = useState([]);
+  useEffect(() => {
+    const getCluster = async () => {
+      const clusterFromServer = await fetchData();
+      setGetData(clusterFromServer);
+    };
+
+    getCluster();
+  }, []);
+  const fetchData = async () => {
+    const respond = await axiosClient.get("/cluster");
+    const data = await respond.json();
+    return data;
+  };
+
   return (
     <>
       <Router>

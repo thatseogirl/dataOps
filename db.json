@@ -1,0 +1,17 @@
+{
+  "userDetails": [
+    {
+      "id": "1",
+      "username": "ROOT ADMIN",
+      "organisation": "DataOps House BV"
+    }
+  ],
+  "cluster": [
+    {
+      "id": "Ikc-zm1wkz",
+      "clusterName": "doh-cluster",
+      "type": "basic",
+      "providerRegion": "GCP | europe-west4"
+    }
+  ]
+}

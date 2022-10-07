@@ -35,13 +35,14 @@ function App() {
   useEffect(() => {
     const getCluster = async () => {
       const clusterFromServer = await fetchData();
+      console.log(clusterFromServer)
       setGetData(clusterFromServer);
     };
 
     getCluster();
   }, []);
   const fetchData = async () => {
-    const respond = await axiosClient.get("/cluster");
+    const respond = await fetch("https://my-json-server.typicode.com/thatseogirl/fullstack_assesment/cluster");
     const data = await respond.json();
     return data;
   };

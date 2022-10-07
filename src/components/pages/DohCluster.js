@@ -8,7 +8,7 @@ import {
     IoIosCheckmarkCircleOutline,
     Tree,
 } from "../index";
-const DohCluster = ({ openDoh, onClose }) => {
+const DohCluster = ({ openDoh, onClose, getData }) => {
     const [metrics, setMetrics] = useState(Metrics);
     const [resource, setResource] = useState(Resources);
     if (!openDoh) {
@@ -112,17 +112,20 @@ const DohCluster = ({ openDoh, onClose }) => {
                     >
                         Overview
                     </p>
+
                     <div style={{ display: "flex", gap: "1.5em" }}>
                         <div>
                             <p>ID</p>
                             <p>Type</p>
                             <p>Provide & region</p>
                         </div>
-                        <div>
-                            <p>Ikc-zm1wkz</p>
-                            <p>Basic</p>
-                            <p>GCP | europe-west4</p>
-                        </div>
+                        {getData.map((data) => (
+                            <div key={data.id}>
+                                <p>{data.id}</p>
+                                <p>{data.type}</p>
+                                <p>{data.providerRegion}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </Flex>

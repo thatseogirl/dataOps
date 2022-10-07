@@ -1,5 +1,6 @@
-/* eslint-disable no-unused-vars */
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import axios from "axios";
 import {
   Home,
   GlobalStyles,
@@ -9,7 +10,6 @@ import {
 } from "./components";
 import { ThemeProvider } from "styled-components";
 import { useEffect, useState } from "react";
-import { axiosClient } from "./axiosRequest/ApiClient";
 
 const theme = {
   colors: {
@@ -30,20 +30,20 @@ const theme = {
     mobile: "500px",
   },
 };
+const baseURL = "https://my-json-server.typicode.com/thatseogirl/dataOps/cluster"
 function App() {
   const [getData, setGetData] = useState([]);
   useEffect(() => {
     const getCluster = async () => {
       const clusterFromServer = await fetchData();
-      console.log(clusterFromServer)
       setGetData(clusterFromServer);
     };
 
     getCluster();
   }, []);
   const fetchData = async () => {
-    const respond = await fetch("https://my-json-server.typicode.com/thatseogirl/fullstack-assesment/cluster");
-    const data = await respond.json();
+    const response = await axios.get(baseURL);
+    const data = response.data;
     return data;
   };
 
@@ -56,7 +56,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />}></Route>
             <Route path='/environment' element={<Environment />}></Route>
-            <Route path='/confluentCloud' element={<ConfluentCloud />}></Route>
+            <Route path='/confluentCloud' element={<ConfluentCloud getData={getData} />}></Route>
           </Routes>
         </ThemeProvider>
       </Router>

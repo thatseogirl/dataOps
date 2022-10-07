@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { DefaultCluster, DohCluster, BasicCluster, Flex } from "../index";
 
-const ConfluentCloud = () => {
+const ConfluentCloud = ({ getData }) => {
     const [openDoh, setOpenDoh] = useState(false);
     const handleClick = () => {
         setOpenDoh(!openDoh);
@@ -15,7 +15,7 @@ const ConfluentCloud = () => {
                 <BasicCluster />
                 <DefaultCluster handleClick={handleClick} />
             </Flex>
-            <DohCluster openDoh={openDoh} onClose={closeDoh} />
+            <DohCluster openDoh={openDoh} onClose={closeDoh} getData={getData} />
         </div>
     );
 };

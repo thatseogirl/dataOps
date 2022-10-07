@@ -5,7 +5,7 @@ import {
     StyledClickedForm
 } from "../index";
 
-const Input = () => {
+const AllInput = () => {
     const [scale, setScale] = useState(false);
     return (
         <div onClick={() => setScale(!scale)}>
@@ -15,6 +15,7 @@ const Input = () => {
                     <input style={{ width: "100%" }}
                         type='text'
                         name='search'
+                        data-testid="schema"
                         placeholder='Search for Schema fields, schema subjects,topics, connectore and more...'
                     />
                 </StyledClickedForm>
@@ -25,6 +26,7 @@ const Input = () => {
                         type='text'
                         name='search'
                         placeholder='Stream Catalog'
+                        data-testid="stream"
                     />
                 </StyledForm>
             )}
@@ -32,4 +34,4 @@ const Input = () => {
     )
 }
 
-export default Input;
+export default AllInput;

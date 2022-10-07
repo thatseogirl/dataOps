@@ -43,7 +43,7 @@ export const StyledClickedForm = styled.form`
   }
 `;
 export const Wrapper = styled.div`
-  border: 8px thin ${({ theme }) => theme.colors.border};
+  border: 8px thin ${({ theme }) => theme.colors.bColor};
   border-radius: 8px;
   box-shadow: 0px 0px 0 1px #e0e0e7;
   padding: 1em 1.5em;

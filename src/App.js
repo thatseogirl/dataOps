@@ -17,7 +17,7 @@ const theme = {
     bgColor_SideNav: "#fff",
     navBar: "#142B52",
     navigationMenu: "#45C6E8",
-    border: "#E2E2E8",
+    bColor: "#E2E2E8",
     inputText: "#91a9bb",
     userName: "#BEC4CF",
     secondaryColor: "F9F9F9",

@@ -15,11 +15,9 @@ const Button = ({
     className
 }) => {
     return (
-        <StyledButton className={className}
-
+        <StyledButton className={className} data-testid="allButton"
             onClick={onClick}
-        >
-            {text}
+        >{text}
         </StyledButton>
     );
 };

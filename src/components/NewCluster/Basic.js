@@ -40,27 +40,27 @@ const Basic = () => {
                 <table>
                     <Tbody>
                         <Tr style={{ gap: "5.5em" }}>
-                            <td style={{ fontSize: "15px" }}>Ingress</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "15px" }} >Ingress</td>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="ingress_basic">
                                 up to 250 MB/s
                             </td>
                         </Tr>
                         <Tr style={{ gap: "5.8em" }}>
-                            <td style={{ fontSize: "15px" }}>Egress</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "15px" }} >Egress</td>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="egress_basic">
                                 up to 750 MB/s
                             </td>
                         </Tr>
                         <Tr style={{ gap: "5.4em" }}>
                             <td style={{ fontSize: "15px" }}>Storage</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="storage_basic">
                                 up to 5,000 GB
                             </td>
                         </Tr>
                         <Tr style={{ gap: "1.2em" }}>
                             <td style={{ fontSize: "15px" }}>Client connections</td>
                             <td
-                                data-testid='client-connections-BASIC'
+                                data-testid='client-connections-basic'
                                 style={{ fontSize: "14px", color: "#747391" }}
                             >
                                 up to 1,000
@@ -68,13 +68,13 @@ const Basic = () => {
                         </Tr>
                         <Tr style={{ gap: "4.7em" }}>
                             <td style={{ fontSize: "15px" }}>Partitions</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="partitions_basic">
                                 up to 2,048 (includes 10 free partitions)
                             </td>
                         </Tr>
                         <Tr style={{ gap: "3.5em" }}>
                             <td style={{ fontSize: "15px" }}>Uptime SLA</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="sla_basic">
                                 up to 99.5%
                             </td>
                         </Tr>

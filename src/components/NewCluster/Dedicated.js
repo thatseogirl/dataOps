@@ -34,35 +34,35 @@ const Dedicated = () => {
                     <Tbody>
                         <Tr style={{ gap: "5.5em" }}>
                             <td style={{ fontSize: "15px" }}>Ingress</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="ingress_dedicated">
                                 up to 50 MB/s
                             </td>
                         </Tr>
                         <Tr style={{ gap: "5.8em" }}>
                             <td style={{ fontSize: "15px" }}>Egress</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="egress_dedicated">
                                 up to 150 MB/s
                             </td>
                         </Tr>
                         <Tr style={{ gap: "5.4em" }}>
                             <td style={{ fontSize: "15px" }}>Storage</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>unlimited</td>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="storage_dedicated">unlimited</td>
                         </Tr>
                         <Tr style={{ gap: "1.2em" }}>
                             <td style={{ fontSize: "15px" }}>Client connections</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="client_connections_dedicated">
                                 up to 9,000
                             </td>
                         </Tr>
                         <Tr style={{ gap: "4.7em" }}>
                             <td style={{ fontSize: "15px" }}>Partitions</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="partitons_dedicated">
                                 up to 4,500
                             </td>
                         </Tr>
                         <Tr style={{ gap: "3.5em" }}>
                             <td style={{ fontSize: "15px" }}>Uptime SLA</td>
-                            <td style={{ fontSize: "14px", color: "#747391" }}>
+                            <td style={{ fontSize: "14px", color: "#747391" }} data-testid="sla_dedicated">
                                 up to 99.99%
                             </td>
                         </Tr>

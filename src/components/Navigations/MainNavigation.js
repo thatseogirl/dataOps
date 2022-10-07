@@ -8,7 +8,7 @@ import {
     StyledContainer,
     Flex,
     NavBar,
-    Input,
+    AllInput,
     Button,
     StyledUl,
     SideNav,
@@ -43,7 +43,7 @@ const MainNavigation = () => {
 
                     <Flex>
                         <Flex style={{ padding: "0.75em" }}>
-                            <Input />
+                            <AllInput />
                             <Button text='Learn' className='learnBtn' />
                         </Flex>
                         <StyledUl>

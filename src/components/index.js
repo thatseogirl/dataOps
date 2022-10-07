@@ -1,6 +1,6 @@
 //components import
 import Home from "./Router/Home";
-import Input from "./reusableComponents/Input";
+import AllInput from "./reusableComponents/AllInput";
 import Button from "./reusableComponents/Button";
 import SideNav from "./Navigations/SideNav";
 import Environment from "./Router/Environment";
@@ -70,7 +70,7 @@ import {
 
 export {
     Home,
-    Input,
+    AllInput,
     Button,
     SideNav,
     Environment,

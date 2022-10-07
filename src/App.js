@@ -42,7 +42,7 @@ function App() {
     getCluster();
   }, []);
   const fetchData = async () => {
-    const respond = await fetch("https://my-json-server.typicode.com/thatseogirl/fullstack_assesment/cluster");
+    const respond = await fetch("https://my-json-server.typicode.com/thatseogirl/fullstack-assesment/cluster");
     const data = await respond.json();
     return data;
   };
